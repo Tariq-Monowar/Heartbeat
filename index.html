@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>heart</title>
+    <style>
+        body{
+            background-color: #000a18;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .heart{
+            color: red;
+            animation: static 1s ease infinite;
+            text-align: center;
+        }
+        @keyframes static {
+            0%{
+                transform: scale(1);
+            }
+            40%{
+                transform: scale(1.2);
+            }
+            50%{
+                transform: scale(1);
+            }
+            60%{
+                transform: scale(1.2); 
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        i{
+            font-size: 220px;
+            text-shadow: 0px 6px 25px red, 0 0 1em red, 0 0 0.5em red;
+            text-align: center;
+        }
+        .name{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-size: 3rem;
+            background: linear-gradient(#ff0000, #ff00009c);
+            font-family: 'Great Vibes', cursive;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: text 1s ease infinite;
+        }
+        @keyframes text {
+            0%{
+                opacity: 0.3;
+            }
+            40%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0.3;
+            }
+            60%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0.3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">
+        <i class="fas fa-heart"></i>
+        <p class="name"></p>
+        <script>
+            var getname = prompt("Wath is your name? ")
+            const name = document.querySelector(".name")
+            name.innerHTML = getname
+        </script>
+    </div>
+</body>
+</html>
