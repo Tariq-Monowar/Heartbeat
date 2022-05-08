@@ -86,6 +86,10 @@
             var getname = prompt("Wath is your name? ")
             const name = document.querySelector(".name")
             name.innerHTML = getname
+
+            document.querySelector("i").addEventListener("dblclick",()=>{
+                name.innerHTML = prompt("Wath is your name? ")
+            })
         </script>
     </div>
 </body>
